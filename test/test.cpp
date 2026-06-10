@@ -168,11 +168,3 @@ TEST(ClassDoublyLinkedList, Empty_Errors)
 	EXPECT_THROW(First.pop_back(), runtime_error);
 	EXPECT_THROW(First.remove(0), runtime_error);
 }
-
-int main(int argc, char** argv)
-{
-	system("chcp 65001 > nul");
-
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
-}
