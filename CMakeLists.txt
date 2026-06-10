@@ -49,6 +49,7 @@ target_link_libraries(tests
     PRIVATE
     core
     gtest
+    gtest_main
 )
 
 include(GoogleTest)
