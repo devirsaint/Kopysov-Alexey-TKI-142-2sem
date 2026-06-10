@@ -189,12 +189,3 @@ TEST(SlopeRestrictionTest, Polymorphism)
     ASSERT_NE(base->ToString().find("Значение уклона"), string::npos);
 }
 
-int main(int argc, char** argv)
-{
-#ifdef _WIN32
-    system("chcp 65001");
-#endif
-
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
