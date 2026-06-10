@@ -129,7 +129,7 @@ public:
 	* @brief Конструктор класса, задаёт список по списку инициализации
 	* @param other - список данных
 	*/
-	DoublyLinkedList(initializer_list<Type> other) : head(nullptr), tail(nullptr), count(0)
+	DoublyLinkedList(const initializer_list<Type> other) : head(nullptr), tail(nullptr), count(0)
 	{
 		for (const auto& value : other)
 		{
@@ -141,7 +141,7 @@ public:
 	* @brief Конструктор класса, задаёт список по переданному списку данных
 	* @param other - список данных
 	*/
-	DoublyLinkedList(list<Type>& other) : head(nullptr), tail(nullptr), count(0)
+	DoublyLinkedList(const list<Type>& other) : head(nullptr), tail(nullptr), count(0)
 	{
 		for (const auto& value : other)
 		{
