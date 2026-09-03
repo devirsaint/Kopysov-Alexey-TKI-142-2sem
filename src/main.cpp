@@ -90,7 +90,7 @@ void runDoublyLinkedList()
 		ERROR("Ошибка ввода количества элементов");
 	}
 
-	for (int i = 0; i < count; i++)
+	for (size_t i = 0; i < count; i++)
 	{
 		cout << "Введите " << i + 1 << " элемент списка: ";
 		First.push_back(get_number());
